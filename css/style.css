@@ -8,6 +8,10 @@ main{
     background-color: #1F1F1F;
     height: 100vh;
 }
+.addTask{
+    display: flex;
+    margin: 5px;
+}
 
 /* common */
 .bg-white{
@@ -16,4 +20,8 @@ main{
 
 .br-5{
     border-radius: 5px;
+}
+
+.width-80{
+    width: 80%;
 }

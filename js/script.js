@@ -2,6 +2,7 @@ const { createApp } = Vue;
 createApp({
     data(){
         return{
+            textTask: '',
             todoList: [
                 {
                     text: 'Fare i compiti',
@@ -25,6 +26,14 @@ createApp({
     methods: {
         removeTodo(index){
             this.todoList.splice(index, 1);
+        },
+        addTask(){
+            this.todoList.push({
+                text: this.textTask,
+                done: false
+            })
+
+            this.textTask = '';
         }
     }
 }).mount('#app');
